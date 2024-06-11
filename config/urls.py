@@ -45,6 +45,8 @@ schema_view = get_schema_view(
 
 
 urlpatterns = [
+    # admin
+    path('admin/', admin.site.urls),
     # users
     path('api/accounts/', include('users.urls')),
     # conferences
